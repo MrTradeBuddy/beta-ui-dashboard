@@ -38,7 +38,9 @@ export default function Dashboard() {
             <div>
               <p className="text-gray-400">Type:</p>
               <span
-                className={\`inline-block px-3 py-1 rounded-full text-sm font-semibold \${signal.payload.type === "buy" ? "bg-green-500" : "bg-red-500"}\`}
+                className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
+                  signal.payload.type === "buy" ? "bg-green-500" : "bg-red-500"
+                }`}
               >
                 {signal.payload.type.toUpperCase()}
               </span>
